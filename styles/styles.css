@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+:root{
+    /*Primary*/
+    --Dark__cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    
+    /*Neutral*/
+
+    --Very_dark_blue: hsl(212, 21%, 14%);
+    --Dark_grayish_blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+    /*Hover*/
+    --hover: #1A4031;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+}
+
+body{
+    background-color: var(--Cream);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card{
+    background-color: var(--White);
+    max-width: 335px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.card-picture img{
+    width: 100%;
+    
+}
+
+.card-content{
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-tag{
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: .7rem;
+    letter-spacing: .4rem;
+    margin-bottom: 1rem;
+    color: var(--Dark_grayish_blue)
+}
+
+.card-title{
+    font-family: Fraunces;
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    color: var(--Very_dark_blue);
+    line-height: 2.5rem;
+}
+
+.card-description{
+    font-family: Montserrat;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--Dark_grayish_blue);
+    line-height: 1.5rem;
+
+}
+
+.card-price__inline{
+    display: flex;
+    align-items: center;
+    
+}
+
+.card-priceOff{
+    font-family: Fraunces;
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: var(--Dark__cyan);
+}
+
+.card-price{
+    font-family: Montserrat;
+    color: var(--Dark_grayish_blue);
+    text-decoration: line-through;
+}
+
+.card-button{
+    font-family: Montserrat;
+    font-weight: 700;
+    background-color: var(--Dark__cyan);
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem;
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+}
+.card-button::before{
+    content: url(../images/icon-cart.svg);
+    margin-right: .5rem;
+}
+.card-button:hover{
+    background-color: var(--hover);
+}
+
+@media (min-width: 1440px) {
+    .card{
+        display: flex;
+        max-width: 600px;
+    }
+    .card-picture {
+        height: 100%;
+        min-width: 50%;
+    }
+    .card-picture img{
+        height: 100%;
+    }
+    .card-content{
+        margin: 2.5rem;
+    }
+    .card-description{
+        margin-top: 1rem;
+    }
+    .card-price__inline{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .card-priceOff{
+        margin-right: 1.5rem;
+        font-size: 2.3rem;
+    }
+
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
