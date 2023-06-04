@@ -9,4 +9,5 @@
 
 <br>
 <br>
+
 ![Product preview card component desktop preview](https://github.com/mkdir-nicolas/product-preview-card-component/blob/main/design/desktop-preview.jpg)
