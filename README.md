@@ -5,7 +5,7 @@
 <br>
 🔗 [Frontend Mentor - My solution](https://www.frontendmentor.io/solutions/responsive-landing-page-51DAvY4S3Y)
 <br>
-🔗 [My project](https://mkdir-nicolas.github.io/product-preview-card-component/)
+🔗 [Live site](https://mkdir-nicolas.github.io/product-preview-card-component/)
 
 <br>
 <br>
